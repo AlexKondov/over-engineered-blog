@@ -18,7 +18,6 @@ class TrackScroll extends Component<Props> {
 
   updateProgress = throttle(() => {
     const currentScroll = window.top.pageYOffset;
-    // $FlowFixMe
     const totalScroll = document.body.scrollHeight - window.screen.availHeight;
     const progress = Math.min(currentScroll / totalScroll, 1);
 

@@ -1,11 +1,11 @@
 import axios from 'axios';
-import { apiUrl } from '../utils';
+import { apiUrl, perPage } from '../utils';
 
 const URL = `${apiUrl}/podcast`;
 
 export const getPodcasts = async (page: number = 1) => {
   const { data } = await axios.get(URL, {
-    params: { per_page: 30, page },
+    params: { per_page: perPage, page },
   });
   return data;
 };

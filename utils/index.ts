@@ -3,4 +3,4 @@ export const isDeviceMobile = (device: string): boolean =>
 
 export const perPage = 15;
 
-export const apiUrl = 'https://api.thesavagemind.com/wp-json/wp/v2';
+export const apiUrl = 'WORDPRESS_API_URL_HERE';
