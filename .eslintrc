@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "globals": {
+    "navigator": true,
+    "window": true,
+    "document": true
+  },
+  "rules": {
+    "react/destructuring-assignment": "off"
+  }
+}
