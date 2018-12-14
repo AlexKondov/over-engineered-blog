@@ -3,6 +3,7 @@ import App, { NextAppContext } from 'next/app';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 
+import Layout from '../components/Layout';
 import AppHead from '../components/AppHead';
 
 NProgress.configure({ showSpinner: false });
@@ -25,10 +26,12 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <React.Fragment>
+      <>
         <AppHead />
-        <Component {...pageProps} />
-      </React.Fragment>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </>
     );
   }
 }

@@ -85,6 +85,7 @@ const Excerpt = styled.div`
   overflow: hidden;
   position: relative;
   height: 3.6em; /* exactly three lines */
+  ${media.phone`height: 3.7em;`}
   &:after {
     content: '';
     text-align: right;

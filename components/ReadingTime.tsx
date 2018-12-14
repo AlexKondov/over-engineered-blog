@@ -10,6 +10,10 @@ const Text = styled.div`
   text-align: left;
   width: 45%;
 
+  span {
+    margin-right: 5px;
+  }
+
   ${media.phone`width: 90%;`};
 `;
 
@@ -33,7 +37,7 @@ const ReadingTime = ({ content }: Props) => {
 
   return (
     <Text>
-      {getCoffeeCups(averageReadingTime)}
+      <span>{getCoffeeCups(averageReadingTime)}</span>
       Чете се за {averageReadingTime} {minutesString}{' '}
     </Text>
   );
