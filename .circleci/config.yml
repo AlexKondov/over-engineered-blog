@@ -40,7 +40,7 @@ jobs:
         enabled: true
     working_directory: ~/circleci-demo-workflows
     environment:
-      HEROKU_APP: ${HEROKU_APP}
+      HEROKU_APP: "over-engineered-blog"
     steps:
       - checkout
       - run:
